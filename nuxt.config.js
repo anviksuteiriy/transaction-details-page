@@ -27,6 +27,12 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  link: [
+    {
+      rel: 'stylesheet',
+      href: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+    }
+  ],
   script: [{ src: 'https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js', type: 'text/javascript' }],
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -34,6 +40,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/modal.js'},
+    { src: '~plugins/filters.js'},
+    { src: '~/plugins/notification.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,6 +56,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,7 +1,7 @@
 <template>
   <div>
+    <notifications position="top center" class="vue-notification-wrapper" />
     <Nuxt />
-    <side-bar />
   </div>
 </template>
 
@@ -16,6 +16,7 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -23,6 +24,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.vue-notification-wrapper {
+  width: 500px !important;
+}
+.vue-notification {
+  padding: 10 !important;
+  font-size: 14px !important;
 }
 
 *,
@@ -59,5 +68,10 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+@media screen and (max-width: 600px) {
+  .vue-notification-wrapper {
+    width: 350px !important;
+  }
 }
 </style>
