@@ -21,3 +21,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 ### I only have one assumption which is the transaction details are in descending order, that is latest date comes first by endpoint
+
+
+deployed version -->>  https://banking-transactions.netlify.app/
