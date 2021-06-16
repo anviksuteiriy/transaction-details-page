@@ -18,3 +18,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+# I only have one assumption which is the transaction details are in descending order, that is latest date comes first by endpoint
