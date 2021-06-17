@@ -113,7 +113,7 @@ export default {
             handler: async () => {
               try {
                 this.working = true;
-                await this.$axios.$post(`/api/transaction/report-spam/${transaction.transaction_id}`);
+                // await this.$axios.$post(`/api/transaction/report-spam/${transaction.transaction_id}`);
                 this.$notify({
                   type: "success",
                   title: "Transaction has been marked as fake, we will soon reach out to you."
